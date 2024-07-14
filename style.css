@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar Styles */
+header {
+    background: #ff99cc;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('https://wallpapercave.com/wp/wp5639601.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background: #ff66b2;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #e65c9a;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features, .courses, .testimonials {
+    background: #ffe6f2;
+}
+
+.features h2, .courses h2, .testimonials h2, .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.feature-container, .course-container, .testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature, .course, .testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+}
+
+.feature h3, .course h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p, .course p, .testimonial p {
+    font-size: 18px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 15px;
+    background: #ff99cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e68aab;
+}
+
+/* Footer Styles */
+footer {
+    background: #ff99cc;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Redirect Page Styles */
+.redirect-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffe6f2;
+}
+
+.redirect-container .content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.redirect-container .content h1 {
+    margin-bottom: 20px;
+}
+
+.redirect-container .content button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #ff99cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.redirect-container .content button:hover {
+    background: #e68aab;
+}
+
+
+
+
+
+
+
+.signin-container {
+    width: 100%;
+    
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signin-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.signin-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.signin-form label {
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.signin-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signin-form button {
+    padding: 12px;
+    background-color: #da0ccc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.signin-form button:hover {
+    background-color: #35c908;
+}
+
+.signin-form p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signin-form a {
+    color: #e81292;
+    text-decoration: none;
+}
+
+.signin-form a:hover {
+    text-decoration: underline;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    width: 100%;
+    
+}
+
+.signup-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.signup-form h2 {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.signup-form label {
+    text-align: left;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+}
+
+.signup-form input {
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-form button {
+    padding: 14px;
+    background-color: #ec116c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.signup-form button:hover {
+    background-color: #10d74c;
+}
+
+.signup-form p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+.signup-form a {
+    color: #ca0886;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+    color: #e918bf;
+}
